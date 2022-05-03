@@ -6,7 +6,8 @@ Auth guard is  simple, secure and maintainable api. Auth guard have Identity ser
 
 AuthGuard uses **Client Credential Flow** via identity server. In order to send a request to Api, you must first get tokens.
 Request process is follow :
-![Process](https://ibb.co/7kRRzjz)
+
+![Process](https://gcdnb.pbrd.co/images/HtNYDUVIRQ5g.jpg?o=1)
 
 ## Validation
  All requests are filtered through Fluent validaton and cannot enter the system if they are not valid.
