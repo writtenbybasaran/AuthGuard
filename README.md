@@ -9,6 +9,25 @@ Request process is follow :
 
 ![Process](https://gcdnb.pbrd.co/images/HtNYDUVIRQ5g.jpg?o=1)
 
+OpenId configuration url: {identityapp-url}/.well-known/openid-configuration
+
+Token endpoint : {identityapp-url}/connect/token
+
+Sample Identity req : 
+```bash
+curl --location --request POST '{identityapp-url}/connect/token' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'client_id={IdentityConfig}' \
+--data-urlencode 'client_secret={IdentityConfig}' \
+--data-urlencode 'grant_type=client_credentials' \
+--data-urlencode 'scope={IdentityConfig}'
+```
+
+Swagger AuthGuard : 
+```bash
+{AuthGuardapp-url}/swagger/index.html
+```
+
 ## Validation
  All requests are filtered through Fluent validaton and cannot enter the system if they are not valid.
  
